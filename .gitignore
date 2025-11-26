@@ -1,0 +1,129 @@
+# ================================
+# MicroPython / ESP32 project
+# ================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Upload artifacts
+deploy/
+upload/
+dist/
+build/
+
+# MicroPython compiled bytecode
+*.mpy
+
+# Firmware downloads
+firmware*.bin
+esptool*.bin
+bootloader*.bin
+partitions*.bin
+
+# Serial logs
+serial.log
+miniterm.log
+
+# ================================
+# Project private data
+# ================================
+
+# Encrypted user database
+userdata.json
+userdata.enc
+
+# WiFi credentials
+wifi_config.json
+
+# Sensitive keys / sessions
+*.key
+*.pem
+*.crt
+*.token
+*.session
+
+# ================================
+# Web interface files
+# ================================
+
+# Node / npm artifacts (if web UI compiled)
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+build/
+.cache/
+
+# Local development settings
+.env
+.env.local
+.env.production
+.vscode/
+.settings/
+.idea/
+
+# ================================
+# KiCad project
+# ================================
+
+# Automatically generated files
+*.kicad_prl
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.sch-bak
+*.kicad_pcb-bak
+*.dcm
+*.bak
+*-backups/
+
+# KiCad build outputs
+*.step
+*.stp
+*.obj
+*.wrl
+*.3dshapes
+*.xml
+*.csv
+fp-info-cache
+bom/
+gerber/
+fabrication/
+plots/
+
+# ================================
+# OS / editor
+# ================================
+
+# Windows
+Thumbs.db
+Desktop.ini
+desktop.ini
+
+# MacOS
+.DS_Store
+
+# Linux
+*~
+
+# Logs
+*.log
+*.tmp
+*.swp
+
+# ================================
+# Misc
+# ================================
+
+# Local test images / binary blobs
+*.bin
+*.raw
+*.img
+*.zip
+*.tar.gz
+*.7z
+
+# Cache
+.cache/
+*.fzz
