@@ -1,6 +1,10 @@
 # Porta seriale ESP32
 $port = "COM7"
 
+
+# esptool --port COM7 erase_flash
+
+# esptool --port COM7 --baud 460800 write_flash 0x1000 ESP32_GENERIC-20250911-v1.26.1.bin
 # -------------------------------------------------------------------
 # 1. Rileva le cartelle del progetto
 # -------------------------------------------------------------------
@@ -54,7 +58,7 @@ ampy --port $port rm create_folders.py
 # -------------------------------------------------------------------
 $files = Get-ChildItem -Recurse -File | Where-Object {
     $_.FullName -notmatch "\\.vscode" -and
-    $_.Extension -notin @(".ps1", ".fzz") -and
+    $_.Extension -notin @(".ps1", ".fzz", ".bin") -and
     $_.Name -ne "create_folders.py"
 }
 
@@ -68,3 +72,5 @@ foreach ($file in $files) {
 # 7. Rimuovi il file temporaneo locale
 # -------------------------------------------------------------------
 Remove-Item create_folders.py
+
+# python -m serial.tools.miniterm COM7 115200 --exit-char 3 
