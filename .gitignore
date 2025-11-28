@@ -117,7 +117,6 @@ desktop.ini
 # ================================
 
 # Local test images / binary blobs
-*.bin
 *.raw
 *.img
 *.zip
